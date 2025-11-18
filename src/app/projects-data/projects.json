@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Global Sustainable Energy Analysis",
+    "slug": "global-sustainable-energy-analysis",
+    "role": "Data Analyst & Visualization Engineer",
+    "tech": ["Python", "pandas", "Matplotlib", "Seaborn", "Excel", "Jupyter Notebook"],
+    "short": "An analytical deep dive into renewable and non-renewable energy trends worldwide, exploring consumption, generation, and sustainability metrics over time.",
+    "github": "https://github.com/ManideepPippari/Global-Sustainable-Energy-Analysis"
+  }
+]

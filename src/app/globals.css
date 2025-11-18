@@ -1,0 +1,128 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/700.css";
+@import "tailwindcss";
+
+/* ------ Aurora Steel (refined) ------ */
+:root {
+  --bg: #0a0f1c;             /* deep space */
+  --fg: #dfe8ff;             /* soft cool white */
+  --muted: #a8b2d1;          /* body text */
+  --accent: #6a7bff;         /* space blue (primary) */
+  --accent2: #b7a5ff;        /* lavender (secondary) */
+  --chip: #11182a;           /* card bg */
+  --line: rgba(255, 255, 255, 0.08);
+}
+
+/* reset + base */
+html,
+body {
+  height: 100%;
+  margin: 0;          /* <<< removes default body margin (top gap) */
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(1100px 600px at 20% -10%, #10182a 10%, transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, #151c2f 10%, transparent 60%),
+    var(--bg);
+  color: var(--fg);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent2);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* section rhythm */
+section {
+  padding: 4rem 0;                 /* smaller default padding */
+  border-bottom: 1px solid var(--line);
+}
+
+/* First (hero) section – LESS top padding so no empty space */
+section#home {
+  padding-top: 1.5rem;             /* was 4rem from above */
+}
+
+/* premium buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0b0f17;
+  box-shadow: 0 8px 26px rgba(106, 123, 255, 0.28);
+}
+
+.btn-primary:hover {
+  background: var(--accent2);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent2);
+  color: #0b0f17;
+  transform: translateY(-2px);
+}
+
+/* cards */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 24px rgba(183, 165, 255, 0.18);
+}
+
+/* links */
+a {
+  color: var(--accent2);
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* subtle star overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255, 255, 255, 0.2), transparent 60%),
+    radial-gradient(1px 1px at 80% 20%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(1px 1px at 60% 70%, rgba(255, 255, 255, 0.12), transparent 60%);
+}
