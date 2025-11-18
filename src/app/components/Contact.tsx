@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="max-w-6xl mx-auto py-20 px-6"
+      className="max-w-6xl mx-auto py-20 px-6 border-t border-white/10"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}

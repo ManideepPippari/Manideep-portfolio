@@ -12,6 +12,7 @@ function CountUp({ end, label }: { end: number; label: string }) {
       let current = 0;
       const duration = 1500;
       const increment = end / (duration / 16);
+
       const timer = setInterval(() => {
         current += increment;
         if (current >= end) {
@@ -20,6 +21,7 @@ function CountUp({ end, label }: { end: number; label: string }) {
         }
         setCount(Math.round(current));
       }, 16);
+
       return () => clearInterval(timer);
     }
   }, [inView, end]);
@@ -40,7 +42,10 @@ function CountUp({ end, label }: { end: number; label: string }) {
 
 export default function Counters() {
   return (
-    <section id="stats" className="max-w-5xl mx-auto px-6 py-20 text-center">
+    <section
+      id="stats"
+      className="max-w-5xl mx-auto px-6 py-20 text-center border-t border-white/10"
+    >
       <h2 className="text-3xl font-bold mb-10 text-[var(--accent2)]">
         Snapshot Overview
       </h2>

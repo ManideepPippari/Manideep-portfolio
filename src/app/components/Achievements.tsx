@@ -8,8 +8,8 @@ export default function Achievements() {
   return (
     <motion.section
       id="achievements"
-      className="max-w-6xl mx-auto py-20 px-6"
-      initial={{ opacity: 0, y: 40 }}
+      className="max-w-6xl mx-auto py-20 px-6 border-t border-white/10"
+      initial={{ opacity: 0, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true }}
@@ -23,7 +23,7 @@ export default function Achievements() {
       <div className="grid gap-6 md:grid-cols-2 mb-12">
         {/* IBM */}
         <a
-          href="/ibm_data_analyst_certificate.pdf"
+          href="/certificates/ibm_data_analyst_certificate.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col rounded-xl border border-slate-700/80 bg-slate-900/70 p-5 shadow-sm hover:border-sky-400/80 hover:bg-slate-900 transition-colors"
@@ -52,7 +52,7 @@ export default function Achievements() {
 
         {/* OutSkill */}
         <a
-          href="/outskill_generative_ai_certificate.pdf"
+          href="/certificates/outskill_generative_ai_certificate.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col rounded-xl border border-slate-700/80 bg-slate-900/70 p-5 shadow-sm hover:border-sky-400/80 hover:bg-slate-900 transition-colors"
