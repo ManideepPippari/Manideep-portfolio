@@ -14,7 +14,7 @@ export default function QuickAccess() {
 
         <div className="bg-white p-2 inline-block rounded shadow">
           <QRCode
-            value="https://manideep-portfolio-tau.vercel.app/Manideep_Resume.pdf"
+            value="https://manideeppippari.com/Manideep_Resume.pdf"
             size={110}
           />
         </div>
