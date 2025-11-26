@@ -4,28 +4,4 @@
     <loc>https://manideeppippari.com/</loc>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://manideeppippari.com/about</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://manideeppippari.com/skills</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://manideeppippari.com/experience</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://manideeppippari.com/projects</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://manideeppippari.com/achievements</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://manideeppippari.com/contact</loc>
-    <priority>0.90</priority>
-  </url>
 </urlset>
