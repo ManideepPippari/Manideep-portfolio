@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
@@ -7,6 +8,36 @@ import Navbar from "./components/Navbar";
 export const metadata: Metadata = {
   title: "Manideep Pippari | Data & AI",
   description: "Portfolio of Manideep Pippari | Data Engineer & AI Analyst.",
+  metadataBase: new URL("https://manideeppippari.com"),
+
+  // OpenGraph – used by LinkedIn, WhatsApp, etc.
+  openGraph: {
+    title: "Manideep Pippari | Data Engineer & AI/ML Analyst",
+    description:
+      "Portfolio of Manideep Pippari – Data Engineer & AI/ML Analyst skilled in Python, SQL, AWS, Snowflake and BI.",
+    url: "https://manideeppippari.com",
+    siteName: "Manideep Pippari | Data & AI",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        // This image must exist in your /public folder
+        url: "/resume_qr.png",
+        width: 1200,
+        height: 630,
+        alt: "Manideep Pippari – Data & AI Portfolio",
+      },
+    ],
+  },
+
+  // Twitter / X card
+  twitter: {
+    card: "summary_large_image",
+    title: "Manideep Pippari | Data Engineer & AI/ML Analyst",
+    description:
+      "End-to-end Data & AI projects: Spotify ETL on AWS, Global Energy Analytics, and more.",
+    images: ["/resume_qr.png"],
+  },
 };
 
 export default function RootLayout({
