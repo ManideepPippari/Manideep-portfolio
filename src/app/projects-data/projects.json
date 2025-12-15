@@ -1,10 +1,30 @@
 [
   {
     "title": "Global Sustainable Energy Analysis",
-    "slug": "global-sustainable-energy-analysis",
-    "role": "Data Analyst & Visualization Engineer",
-    "tech": ["Python", "pandas", "Matplotlib", "Seaborn", "Excel", "Jupyter Notebook"],
-    "short": "An analytical deep dive into renewable and non-renewable energy trends worldwide, exploring consumption, generation, and sustainability metrics over time.",
+    "slug": "global-sustainable-energy",
+    "role": "Data Analyst",
+    "tech": ["Python", "SQL", "Power BI", "Tableau"],
+    "short": "Analyzed worldwide renewable vs non‑renewable trends using Python, SQL and Power BI; forecasted sustainability adoption rates and policy performance.",
     "github": "https://github.com/ManideepPippari/Global-Sustainable-Energy-Analysis"
+  },
+  {
+    "title": "Spotify End-to-End Data Engineering Pipeline",
+    "slug": "spotify-end-to-end",
+    "role": "Data Engineer",
+    "tech": [
+      "AWS Lambda",
+      "S3",
+      "Glue",
+      "Athena",
+      "Airflow",
+      "Databricks",
+      "PySpark",
+      "Delta Lake",
+      "Snowflake",
+      "Python",
+      "Power BI"
+    ],
+    "short": "Built a production-style ETL/ELT pipeline that ingests Spotify data, processes it across AWS, Databricks and Snowflake, and delivers insights via Power BI dashboards.",
+    "github": "https://github.com/ManideepPippari/spotify-etl-data-engineering"
   }
 ]

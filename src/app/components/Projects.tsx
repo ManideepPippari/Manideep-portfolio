@@ -12,15 +12,35 @@ export default function Projects() {
       github:
         "https://github.com/ManideepPippari/Global-Sustainable-Energy-Analysis",
     },
+    {
+      title: "Spotify End-to-End Data Engineering Pipeline",
+      description:
+        "Built a production-style ETL/ELT pipeline that ingests Spotify data, processes it across AWS, Databricks and Snowflake, orchestrates workflows with Airflow, and surfaces insights via Power BI dashboards.",
+      tech: [
+        "AWS Lambda",
+        "S3",
+        "Glue",
+        "Athena",
+        "Airflow",
+        "Databricks",
+        "PySpark",
+        "Delta Lake",
+        "Snowflake",
+        "Python",
+        "Power BI",
+      ],
+      github:
+        "https://github.com/ManideepPippari/spotify-etl-data-engineering",
+    },
   ];
 
   return (
     <motion.section
       id="projects"
-      className="max-w-6xl mx-auto px-6 py-20 border-t border-white/10"
+      className="max-w-6xl mx-auto px-6 py-20"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <h2 className="text-3xl font-bold text-center mb-12 text-slate-100">
@@ -40,7 +60,8 @@ export default function Projects() {
             </h3>
             <p className="text-sm text-white/70 mb-3">{p.description}</p>
             <p className="text-xs text-white/40 mb-5">
-              <strong className="text-white/60">Tech:</strong> {p.tech.join(", ")}
+              <strong className="text-white/60">Tech:</strong>{" "}
+              {p.tech.join(", ")}
             </p>
 
             <a

@@ -17,7 +17,7 @@
 html,
 body {
   height: 100%;
-  margin: 0;          /* <<< removes default body margin (top gap) */
+  margin: 0;
   padding: 0;
 }
 
@@ -42,15 +42,19 @@ h4 {
   letter-spacing: 0.3px;
 }
 
-/* section rhythm */
+/* section rhythm (lines removed) */
 section {
-  padding: 4rem 0;                 /* smaller default padding */
+  padding: 4rem 0;
+}
+
+/* Optional: use this class ONLY where you want a divider line */
+.section-divider {
   border-bottom: 1px solid var(--line);
 }
 
 /* First (hero) section – LESS top padding so no empty space */
 section#home {
-  padding-top: 1.5rem;             /* was 4rem from above */
+  padding-top: 1.5rem;
 }
 
 /* premium buttons */
